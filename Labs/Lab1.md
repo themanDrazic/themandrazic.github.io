@@ -11,7 +11,7 @@ In this lab, the goal was to start up the RedBoard Artemis Nano with the Arduino
 ## II. Blink Example
 In this section, we used the example Arduino "Blink It Up" script to flash the LED on and off at a rate of 1 second. Check out the video below to watch it in action!
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=zcOysbiQd2A&ab_channel=TheBrowserCompany" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/30YJfUKDW8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ---
 ## III. Serial In Example
