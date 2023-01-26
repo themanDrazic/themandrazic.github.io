@@ -1,5 +1,5 @@
 ---
-title: Lab 1 - Artemis Board <\br>
+title: Lab 1 - Artemis Board
 
 ---
 [Return to Main Page](https://themandrazic.github.io/)
