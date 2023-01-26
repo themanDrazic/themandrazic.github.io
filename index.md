@@ -1,7 +1,7 @@
 ---
 title: ECE 5960 - Design and Implementation of Fast Robots
 ---
-# Author: Alexander Drazic (NetID: ard226)
+# Alexander Drazic (NetID: ard226)
 ---
 
 ## About Me
