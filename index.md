@@ -3,6 +3,7 @@ title: ECE 5960 - Design and Implementation of Fast Robots
 ---
 # Alexander Drazic (NetID: ard226)
 ---
+<img src="./Images/headshot.jpg" alt="hi" class="inline"/>
 
 ## About Me
 I am a current Master of Engineering student at Cornell University majoring in Electrical and Computer Engineeering.
