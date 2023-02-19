@@ -11,7 +11,7 @@ In this lab, the goal was to equip the robot with time of flight (ToF) sensors -
 ## II. Prelab Requirements
 ### I2C Sensor Address
 In order to start this lab, the first task necessary was discovering the I2C address that the RedBoard Artemis Nano recognized the Time of Flight (ToF) sensor as. To do this, I loaded up the example Artemis sketch named ***Example1_wire_I2C***. When this ran on the board it printed out the I2C address that was connected to the board which was **0x29** as shown in the below screenshot.
-<img src="./Images/l3_i2cPort.png" alt="hi" class="inline"/>
+<img src="../Images/l3_i2cPort.png" alt="hi" class="inline"/>
 
 
 ### Two ToF Sensors
@@ -26,13 +26,13 @@ For the final part of the prelab I considered the placement of the two ToF senso
 ## III. Lab Tasks
 ### QWIIC breakout Board
 In order to have two ToF sensors, I used a QWIIC breakout board that allowed for multiple I2C connections to the Artemis. Below are pictures of the breakout board setup and the data it was outputting to the serial monitor as I was testing its accuracy.
-<img src="./Images/l3_setup" alt="hi" class="inline"/>
-<img src="./Images/l3_singleSensor.JPG" alt="hi" class="inline"/>
+<img src="../Images/l3_setup.JPG" alt="hi" class="inline"/>
+<img src="../Images/l3_singleSensor.JPG" alt="hi" class="inline"/>
 
 
 ### Accuracy
 I chose the long distance mode for the sensors because I believe this will be the best way to map out the maze with the final robot. If there is a long stretch in the maze, having an inaccurate measurement will throw off the robot significantly. So with the long mode set, I tested the accuracy of the sensor as shown below.
-<img src="./Images/l3_accuracyTest.jpg" alt="hi" class="inline"/>
+<img src="../Images/l3_accuracyTest.jpg" alt="hi" class="inline"/>
 
 ### Two ToF sensors
 As I discussed in the prelab section, adding two ToF sensors required using an Artemis digital I/O pin. I chose pin 4 because it was an open pin on the Artemis that wasn't an analog pin. This is important because analog pins should ideally be saved for analog sensors since there are fewer of them than digital pins. <br/>
@@ -48,7 +48,7 @@ digitalWrite(4, HIGH);
 With both sensors properly set up, all I needed to do was test it. The below video shows both distance sensors actively reading the distance!
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tjK_hkgxSuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<img src="./Images/l3_doubleSensor.JPG" alt="hi" class="inline"/>
+<img src="../Images/l3_doubleSensor.JPG" alt="hi" class="inline"/>
 
 ### ToF Sensor Speed
 As it will be important in the final robot, my next task was to allow the rest of my code to execute while the ToF sensors were waiting for their data reads. Seeing as my robot will have other sensors and functions, I can't let my code hang while it waits for the ToF sensors to finish their measurements. I also wanted to measure how long each data read took and if the distance affected how long the measurement took. I wrote the following code snippet to do this:
@@ -81,7 +81,7 @@ void loop(void)
 }
 ```
 The below picture shows what was printed to the serial port.
-<img src="./Images/l3_timedSerial.JPG" alt="hi" class="inline"/>
+<img src="../Images/l3_timedSerial.JPG" alt="hi" class="inline"/>
 
 As we saw in the above picture and what I witnessed by looking through even more data, was that the read time of the sensor and the distance of the read were only slightly correlated. For reads up to ~650mm, the acquisition time was the same as reads that were very small. For reads over this, it then took extra time. I noticed, however, that the reads took ~100ms for small reads and ~200ms for the larger reads. I'm not sure why this is but maybe it has to do with calculation rates and the processor scheduling.
 
