@@ -13,3 +13,4 @@ ECE 5960 - Design and Implementation of Fast Robots focuses on systems level des
 
 ## Labs:
 [Lab 1 - Artemis](./Labs/Lab1.md) <br/>
+[Lab 3 - Time of Flight Sensors] (./Labs/Lab2.md) <br/>
