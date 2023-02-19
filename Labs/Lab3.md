@@ -11,8 +11,8 @@ In this lab, the goal was to equip the robot with time of flight (ToF) sensors -
 ## II. Prelab Requirements
 ### I2C Sensor Address
 In order to start this lab, the first task necessary was discovering the I2C address that the RedBoard Artemis Nano recognized the Time of Flight (ToF) sensor as. To do this, I loaded up the example Artemis sketch named ***Example1_wire_I2C***. When this ran on the board it printed out the I2C address that was connected to the board which was **0x29** as shown in the below screenshot.
-<img src="../Images/l3_i2cPort.png" alt="hi" class="inline"/>
 
+<img src="../Images/l3_i2cPort.png" alt="hi" class="inline"/>
 
 ### Two ToF Sensors
 After finding the address for the first sensor, I then needed to connect a second ToF sensor. To do this, I increased the address label up to 0x30 but this didn't work. After this I increased it to 0x31 which also didn't work but then the 0x32 address did read it properly.
@@ -98,3 +98,4 @@ Based on my findings, neither color nor texture affected the readings of the sen
 
 ---
 ## V. Conclusion
+Overall this was a pretty successful lab and I'm excited to keep slowly building on the robot so that it can be fully functional in the next few weeks!
